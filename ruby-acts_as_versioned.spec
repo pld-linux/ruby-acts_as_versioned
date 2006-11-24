@@ -1,4 +1,5 @@
-Summary:	adds simple versioning to an ActiveRecord module
+Summary:	Adds simple versioning to an ActiveRecord module
+Summary(pl):	Proste wersjonowanie dla modu³u ActiveRecord
 Name:		ruby-acts_as_versioned
 Version:	0.2.3
 Release:	1
@@ -7,7 +8,6 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/7053/acts_as_versioned-%{version}.tgz
 # Source0-md5:	16350fe3521463f3820ff984a4689b72
 URL:		http://ar-versioned.rubyforge.org/
-#BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.3.1
 Requires:	ruby-ActiveRecord
@@ -16,6 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This library adds simple versioning to an ActiveRecord module.
+
+%description -l pl
+Ta biblioteka dodaje proste wersjonowanie do modu³u ActiveRecord.
 
 %prep
 %setup -q -n acts_as_versioned-%{version}
