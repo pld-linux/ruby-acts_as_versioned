@@ -1,5 +1,5 @@
 Summary:	Adds simple versioning to an ActiveRecord module
-Summary(pl.UTF-8):   Proste wersjonowanie dla modułu ActiveRecord
+Summary(pl.UTF-8):	Proste wersjonowanie dla modułu ActiveRecord
 Name:		ruby-acts_as_versioned
 Version:	0.2.3
 Release:	1
