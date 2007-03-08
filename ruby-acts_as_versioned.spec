@@ -41,7 +41,7 @@ install -d $RPM_BUILD_ROOT{%{ruby_archdir},%{ruby_ridir}}
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
-cp -a ri/ri/* $RPM_BUILD_ROOT%{ruby_ridir}
+cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 rm $RPM_BUILD_ROOT%{ruby_ridir}/ActiveRecord/cdesc-ActiveRecord.yaml
 
 %clean
