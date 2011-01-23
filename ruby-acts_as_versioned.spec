@@ -9,7 +9,7 @@ Source0:	http://rubyforge.org/frs/download.php/7053/acts_as_versioned-%{version}
 # Source0-md5:	16350fe3521463f3820ff984a4689b72
 URL:		http://ar-versioned.rubyforge.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	setup.rb >= 3.3.1
 Requires:	ruby-ActiveRecord
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,7 +42,6 @@ ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
 cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
-rm $RPM_BUILD_ROOT%{ruby_ridir}/ActiveRecord/cdesc-ActiveRecord.yaml
 
 %clean
 rm -rf $RPM_BUILD_ROOT
